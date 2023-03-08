@@ -268,9 +268,9 @@ h3 { font-size: var(--fs-3); }
     .container {
         padding-top: 200px;
         min-height: 100vh;
-        // gap: 2rem;
-        // flex-direction: column;
-        // align-items: center;
+        gap: 2rem;
+        flex-direction: column;
+        align-items: center;
     }
 
     .hero-text {
@@ -307,26 +307,26 @@ h3 { font-size: var(--fs-3); }
 
     }
 
-    // @media (min-width: 992px) {
-    //     .container {
-    //         flex-direction: row;
-    //         padding-top: 100px;
-    //     }
+    @media (min-width: 992px) {
+        .container {
+            flex-direction: row;
+            padding-top: 100px;
+        }
 
-    //     .hero-text {
-    //         align-self: center;
-    //     }
+        .hero-text {
+            align-self: center;
+        }
 
-    //     // .image {
-    //     //     margin: 0;
-    //     // }
-    // }
+        // .image {
+        //     margin: 0;
+        // }
+    }
 
-    // @media (min-width: 1200px) {
-    //     .container {
-    //         gap: 8rem;
-    //     }
-    // }
+    @media (min-width: 1200px) {
+        .container {
+            gap: 8rem;
+        }
+    }
 }
 
 // .hero-content {
