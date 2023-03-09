@@ -282,10 +282,11 @@ h3 { font-size: var(--fs-3); }
             padding: 10px;
             background-image: url("data:image/svg+xml,%3csvg width='100%25' height='100%25' xmlns='http://www.w3.org/2000/svg'%3e%3crect width='100%25' height='100%25' fill='none' stroke='black' stroke-width='4' stroke-dasharray='10' stroke-dashoffset='6' stroke-linecap='square'/%3e%3c/svg%3e");
             margin-bottom: 10px;
+            font-size: 12px;
         }
 
         h1 {
-            font-size: 110px;
+            font-size: 90px;
             font-weight: bold;
             color: var(--color-text);
             line-height: 1;
@@ -293,7 +294,7 @@ h3 { font-size: var(--fs-3); }
             text-shadow: 2px 3px #fff;
 
             span {
-                font-size: 80px;
+                font-size: 70px;
             }
         }
     }
@@ -303,7 +304,7 @@ h3 { font-size: var(--fs-3); }
         img {
             width: 100%;
             max-width: 600px;
-        }
+        } 
 
     }
 
@@ -317,16 +318,21 @@ h3 { font-size: var(--fs-3); }
             align-self: center;
         }
 
+        .hero-text,
+        .image {
+            flex: 0 0 50%;
+        }
+
         // .image {
         //     margin: 0;
         // }
     }
 
-    @media (min-width: 1200px) {
-        .container {
-            gap: 8rem;
-        }
-    }
+    // @media (min-width: 1200px) {
+    //     .container {
+    //         gap: 8rem;
+    //     }
+    // }
 }
 
 // .hero-content {

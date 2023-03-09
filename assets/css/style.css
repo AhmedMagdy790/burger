@@ -239,9 +239,10 @@ h3 {
   padding: 10px;
   background-image: url("data:image/svg+xml,%3csvg width='100%25' height='100%25' xmlns='http://www.w3.org/2000/svg'%3e%3crect width='100%25' height='100%25' fill='none' stroke='black' stroke-width='4' stroke-dasharray='10' stroke-dashoffset='6' stroke-linecap='square'/%3e%3c/svg%3e");
   margin-bottom: 10px;
+  font-size: 12px;
 }
 .hero .hero-text h1 {
-  font-size: 110px;
+  font-size: 90px;
   font-weight: bold;
   color: var(--color-text);
   line-height: 1;
@@ -249,7 +250,7 @@ h3 {
   text-shadow: 2px 3px #fff;
 }
 .hero .hero-text h1 span {
-  font-size: 80px;
+  font-size: 70px;
 }
 .hero .image img {
   width: 100%;
@@ -263,10 +264,9 @@ h3 {
   .hero .hero-text {
     align-self: center;
   }
-}
-@media (min-width: 1200px) {
-  .hero .container {
-    gap: 8rem;
+  .hero .hero-text,
+  .hero .image {
+    flex: 0 0 50%;
   }
 }
 
