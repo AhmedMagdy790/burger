@@ -223,9 +223,8 @@ h3 {
   min-height: 100vh;
 }
 .hero .container {
-  padding-top: 200px;
-  min-height: 100vh;
   gap: 2rem;
+  padding: 230px 15px 150px 15px;
   flex-direction: column;
   align-items: center;
 }
@@ -239,10 +238,10 @@ h3 {
   padding: 10px;
   background-image: url("data:image/svg+xml,%3csvg width='100%25' height='100%25' xmlns='http://www.w3.org/2000/svg'%3e%3crect width='100%25' height='100%25' fill='none' stroke='black' stroke-width='4' stroke-dasharray='10' stroke-dashoffset='6' stroke-linecap='square'/%3e%3c/svg%3e");
   margin-bottom: 10px;
-  font-size: 12px;
+  font-size: 10px;
 }
 .hero .hero-text h1 {
-  font-size: 90px;
+  font-size: 72px;
   font-weight: bold;
   color: var(--color-text);
   line-height: 1;
@@ -250,28 +249,64 @@ h3 {
   text-shadow: 2px 3px #fff;
 }
 .hero .hero-text h1 span {
-  font-size: 70px;
+  font-size: 60px;
 }
 .hero .image img {
   width: 100%;
   max-width: 600px;
 }
+@media (min-width: 768px) {
+  .hero .hero .container {
+    padding: 250px 120px 150px 120px;
+  }
+  .hero .hero-text > span {
+    font-size: 14px;
+  }
+  .hero .hero-text h1 {
+    font-size: 84px;
+  }
+  .hero .hero-text h1 span {
+    font-size: 72px;
+  }
+}
 @media (min-width: 992px) {
   .hero .container {
     flex-direction: row;
-    padding-top: 100px;
   }
   .hero .hero-text {
     align-self: center;
   }
   .hero .hero-text,
   .hero .image {
-    flex: 0 0 50%;
+    flex: 0 0 auto;
+    width: 50%;
   }
 }
 
 /* End Hero */
+@media (min-width: 576px) {
+  .container {
+    max-width: 525px;
+    margin-inline: auto;
+  }
+}
+@media (min-width: 768px) {
+  .container {
+    max-width: 720px;
+  }
+}
+/* 
+    responsive for Larger than 992px screen 
+*/
 @media (min-width: 992px) {
+  .container {
+    max-width: 950px;
+  }
   /* Header */
   /* About */
+}
+@media (min-width: 1200px) {
+  .container {
+    max-width: 1150px;
+  }
 }/*# sourceMappingURL=style.css.map */
